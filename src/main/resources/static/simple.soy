@@ -1,0 +1,37 @@
+{namespace com.myheritage.bitbucket.merge.checks}
+
+/**
+ * @param config
+ * @param errors
+ */
+{template .formContents}
+    {call aui.form.textField}
+        {param id: 'mergeCommitMsgRegex' /}
+		{param labelContent: 'Merge commit message Regex' /}
+		{param value:$config ? $config['mergeCommitMsgRegex'] : null /}
+		{param descriptionText: 'Require that all merge commit messages match this regular expression.' /}
+        {param extraClasses: 'long-field' /}
+        {param isRequired: 'true' /}
+		{param errorTexts: $errors ? $errors['mergeCommitMsgRegex'] : null /}
+    {/call}
+
+    {call aui.form.textareaField}
+        {param id: 'mergeCommitMsgSummaryText' /}
+		{param labelContent: 'A summary notification' /}
+        {param value:$config ? $config['mergeCommitMsgSummaryText'] :  null /}
+		{param descriptionText: 'This summary notification will be de displayed when the merge commit message is not valid' /}
+        {param extraClasses: 'long-field' /}
+        {param isRequired: 'true' /}
+		{param errorTexts: $errors ? $errors['mergeCommitMsgSummaryText'] : null /}
+    {/call}
+
+    {call aui.form.textareaField}
+        {param id: 'mergeCommitMsgDetailedText' /}
+		{param labelContent: 'A detailed notification' /}
+		{param value:$config ? $config['mergeCommitMsgDetailedText'] : null /}
+		{param descriptionText: 'This detailed notification will be de displayed when the merge commit message is not valid' /}
+        {param extraClasses: 'long-field' /}
+        {param isRequired: 'true' /}
+		{param errorTexts: $errors ? $errors['mergeCommitMsgDetailedText'] : null /}
+    {/call}
+{/template}
