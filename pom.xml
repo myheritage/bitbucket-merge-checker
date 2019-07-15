@@ -16,14 +16,14 @@
         <url>http://www.myheritage.com/</url>
     </organization>
 
-    <!-- <scm>
-        <connection>scm:git:${gitUrl}.git</connection>
-        <developerConnection>scm:git:${gitUrl}.git</developerConnection>
-        <url>${gitUrl}</url>
+    <scm>
+        <connection>scm:git:https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</connection>
+        <developerConnection>scm:git:https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</developerConnection>
+        <url>https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</url>
     </scm>
 
     <issueManagement>
-        <url>${gitUrl}/issues</url>
+        <url>https://github.com/myheritage/bitbucket-commit-msg-merge-check/issues</url>
         <system>GitHub</system>
     </issueManagement>
 
@@ -32,7 +32,7 @@
             <name>Apache License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
-    </licenses> -->
+    </licenses>
 
     <developers>
         <developer>
