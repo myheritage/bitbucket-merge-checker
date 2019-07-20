@@ -29,20 +29,14 @@ public class IsValidCommitMessageMergeCheck implements RepositoryMergeCheck {
     @Override
     public RepositoryHookResult preUpdate(@Nonnull PreRepositoryHookContext context,
                                           @Nonnull PullRequestMergeHookRequest request) {
-        
-        String msg = request.getMessage().orElse(null);
-        
-        // Retrieve the relevant parameters from the hook settings
-        String mergeCommitMsgRegex = context.getSettings().getString("mergeCommitMsgRegex", ".");
-        String mergeCommitMsgSummaryText = context.getSettings().getString("mergeCommitMsgSummaryText");
-        String mergeCommitMsgDetailedText = context.getSettings().getString("mergeCommitMsgDetailedText");
-        
-        if (msg != null) {
-            // String pattern = "^(revert: )?(feat|fix|docs|style|refactor|perf|test|chore)(\\(.+\\))?: (.|\n){1,500}";
-            String pattern = mergeCommitMsgRegex;
-            boolean isValidMessage = msg.matches(pattern);
-            System.out.println("mergeCommitMsgSummaryText = " + mergeCommitMsgSummaryText);
-            System.out.println("mergeCommitMsgDetailedText = " + mergeCommitMsgDetailedText);
+        if (!request.isDryRun()) {
+            String msg = request.getMessage().orElse(null);
+            // Retrieve the relevant parameters from the hook settings
+            String mergeCommitMsgRegex = context.getSettings().getString("mergeCommitMsgRegex", ".");
+            String mergeCommitMsgSummaryText = context.getSettings().getString("mergeCommitMsgSummaryText");
+            String mergeCommitMsgDetailedText = context.getSettings().getString("mergeCommitMsgDetailedText");
+            // String pattern = mergeCommitMsgRegex;
+            boolean isValidMessage = msg.matches(mergeCommitMsgRegex);
             if (!isValidMessage) {
                 String summaryMsg = i18nService.getText("myheritage.plugin.merge.check.notvalidmessage.summary",
                         mergeCommitMsgSummaryText);
@@ -53,5 +47,4 @@ public class IsValidCommitMessageMergeCheck implements RepositoryMergeCheck {
         }
         return RepositoryHookResult.accepted();
     }
-
 }
