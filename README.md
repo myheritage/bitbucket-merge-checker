@@ -22,6 +22,7 @@ Now you should see the "Commit message merge check" plugin available among your 
 By default the plugin is disabled for all projects and repos. To activate it for a project or repo you should:
 1. Go to the desired project/repo and open its settings
 2. select the "Merge Checks" menu item - you will now see the list of available plugins
+![The plugin installed on the manage apps page](assets/plugin-on-avilalbe-marge-checks.png)
 3. Toggle the "Commit message merge check hook" on. You will be prompted with the plugin configuration dialog (see image below)
 ![The plugin installed on the manage apps page](assets/plugin-configuration-dialog.png)
 4. Fill the fields (all are required) 
