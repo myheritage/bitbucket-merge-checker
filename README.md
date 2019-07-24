@@ -43,6 +43,10 @@ Now You should be able to navigate to Bitbucket on your local machine and see th
 ### Modifying and checking 
 The plugin support a sort of live-reloading OOTB, which means that after each modification you made you can run `atlas-package` on the repository root directory and refresh the Bitbucket page to see your changes.
 
+### Running tests
+In order to run the tests you should run the following command from the project's root directory: `atlas-unit-test`.  
+This will run the unit tests.
+
 ### Bitbucket Server version compatibility
 This plugin is was tested on Bitbucket-Server@5.16.0, but it might still work on lower versions than that.
 

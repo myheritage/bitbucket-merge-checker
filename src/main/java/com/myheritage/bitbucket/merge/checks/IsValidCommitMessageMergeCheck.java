@@ -35,8 +35,8 @@ public class IsValidCommitMessageMergeCheck implements RepositoryMergeCheck {
             String mergeCommitMsgRegex = context.getSettings().getString("mergeCommitMsgRegex", ".");
             String mergeCommitMsgSummaryText = context.getSettings().getString("mergeCommitMsgSummaryText");
             String mergeCommitMsgDetailedText = context.getSettings().getString("mergeCommitMsgDetailedText");
-            // String pattern = mergeCommitMsgRegex;
             boolean isValidMessage = msg.matches(mergeCommitMsgRegex);
+            
             if (!isValidMessage) {
                 String summaryMsg = i18nService.getText("myheritage.plugin.merge.check.notvalidmessage.summary",
                         mergeCommitMsgSummaryText);
