@@ -1,7 +1,7 @@
-# Bitbucket Merge Commit Message Checker
+# Bitbucket Merge Checker
 
-You always wanted a way to validate the commit message you enter when you merge a branch on Bitbucket, right? well, now you can!  
-This is a simple (yet uncommon) merge-commit message checker for Bitbucket which can be customized by Regex and be toggled on and off at the Project level and at the Repo level!
+You always wanted a way to validate the commit message you enter when you merge a branch on Bitbucket, right? well, now you can!   
+This is a simple (yet uncommon) merge checker for Bitbucket which can be customized and toggled on and off at both the Project and the Repo level.
 
 ## Getting started
 ### Installing
@@ -23,7 +23,7 @@ By default the plugin is disabled for all projects and repos. To activate it for
 1. Go to the desired project/repo and open its settings
 2. select the "Merge Checks" menu item - you will now see the list of available plugins
 ![The plugin installed on the manage apps page](assets/plugin-on-avilalbe-marge-checks.png)
-3. Toggle the "Commit message merge check hook" on. You will be prompted with the plugin configuration dialog (see image below)
+3. Toggle the "Merge checker hook" on. You will be prompted with the plugin configuration dialog (see image below). Currently the plugin only supports validation over commit messages.
 ![The plugin installed on the manage apps page](assets/plugin-configuration-dialog.png)
 4. Fill the fields (all are required) 
    * Merge commit message Regex - The Regex against the commit message will be validated
@@ -55,4 +55,4 @@ This plugin is was tested on Bitbucket-Server@5.16.0, but it might still work on
 Currently only the English language is supported.
 
 ### License
-Bitbucket Merge Commit Message Checker is [Apache License Version 2.0 licensed](./LICENSE).
+Bitbucket Merge Checker is [Apache License Version 2.0 licensed](./LICENSE).

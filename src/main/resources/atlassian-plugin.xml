@@ -7,10 +7,10 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
-    <resource type="i18n" name="i18n" location="bitbucket-commit-msg-merge-check"/>
+    <resource type="i18n" name="i18n" location="bitbucket-merge-checker"/>
 
-    <repository-hook name="Commit message merge check hook" key="isValidCommitMessageMergeCheck" class="bean:isValidCommitMessageMergeCheck">
-        <description>Makes sure that a merge commit message is valid according to a Regex</description>
+    <repository-hook name="Merge checker hook" key="isValidCommitMessageMergeCheck" class="bean:isValidCommitMessageMergeCheck">
+        <description>Runs checks before a PR is merged</description>
         <icon>images/pluginLogo.png</icon>
         <scopes>
             <scope>project</scope>

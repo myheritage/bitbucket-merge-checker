@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.myheritage.bitbucket</groupId>
-    <artifactId>bitbucket-commit-msg-merge-check</artifactId>
+    <artifactId>bitbucket-merge-checker</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>atlassian-plugin</packaging>
 
-    <name>Commit message merge check</name>
-    <description>This is the com.myheritage.bitbucket:bitbucket-commit-msg-merge-check plugin for Atlassian Bitbucket Server.</description>
+    <name>Bitbucket merge checker</name>
+    <description>This is the com.myheritage.bitbucket:bitbucket-merge-checker plugin for Atlassian Bitbucket Server.</description>
 
     <organization>
         <name>MyHeritage</name>
@@ -17,13 +17,13 @@
     </organization>
 
     <scm>
-        <connection>scm:git:https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</connection>
-        <developerConnection>scm:git:https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</developerConnection>
-        <url>https://github.com/myheritage/bitbucket-commit-msg-merge-check.git</url>
+        <connection>scm:git:https://github.com/myheritage/bitbucket-merge-checker.git</connection>
+        <developerConnection>scm:git:https://github.com/myheritage/bitbucket-merge-checker.git</developerConnection>
+        <url>https://github.com/myheritage/bitbucket-merge-checker.git</url>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/myheritage/bitbucket-commit-msg-merge-check/issues</url>
+        <url>https://github.com/myheritage/bitbucket-merge-checker/issues</url>
         <system>GitHub</system>
     </issueManagement>
 
