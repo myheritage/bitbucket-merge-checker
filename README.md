@@ -5,8 +5,14 @@ This is a simple (yet uncommon) merge checker for Bitbucket which can be customi
 
 ## Getting started
 ### Installing
-In order to enjoy the plugin you first need to install it on you Bitbucket server:  
+In order to enjoy the plugin you first need to install it on you Bitbucket server, and you have 2 options for that:  
 > You need to have administrator permissions to be able to install plugins on your Bitbucket server
+#### Option 1 :: The Marketplace
+1. On Bitbucket, go to the [Marketplace](https://marketplace.atlassian.com/addons/app/bitbucket) and search for "Bitbucket merge checker"
+2. Make sure the result matches this plugin
+3. Complete the installation
+
+#### Option 2 :: Installing the .jar directly
 1. Download the plugin .jar file from the `dist` directory (we recommend you download it from one of the releases and not directly from the master branch).
 2. Go to Bitbucket server's "Manage apps" page
 3. Click on the "Upload app" link and you will get a prompt for a file upload
@@ -49,7 +55,7 @@ In order to run the tests you should run the following command from the project'
 This will run the unit tests.
 
 ### Bitbucket Server version compatibility
-This plugin is was tested on Bitbucket-Server@5.16.0, but it might still work on lower versions than that.
+This plugin was tested for Bitbucket-Server@5.16.0, but it might still work on lower versions than that.
 
 ### i18n support
 Currently only the English language is supported.
