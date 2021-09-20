@@ -9,7 +9,7 @@
 
     <resource type="i18n" name="i18n" location="bitbucket-merge-checker"/>
 
-    <repository-hook name="Merge checker hook" key="isValidCommitMessageMergeCheck" class="bean:isValidCommitMessageMergeCheck">
+    <repository-merge-check name="Merge checker hook" key="isValidCommitMessageMergeCheck" configurable="true" class="bean:isValidCommitMessageMergeCheck">
         <description>Runs checks before a PR is merged</description>
         <icon>images/pluginLogo.png</icon>
         <scopes>
@@ -21,5 +21,5 @@
             <directory location="/static/"/>
         </config-form>
         <validator>com.myheritage.bitbucket.merge.checks.IsValidCommitMessageSettingsValidator</validator>
-    </repository-hook>
+    </repository-merge-check>
 </atlassian-plugin>

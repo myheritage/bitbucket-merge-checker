@@ -8,7 +8,7 @@
     <packaging>atlassian-plugin</packaging>
 
     <name>Bitbucket merge checker</name>
-    <description>This is the com.myheritage.bitbucket:bitbucket-merge-checker plugin for Atlassian Bitbucket Server.</description>
+    <description>This Plugin allows the admin to set a Regex merge check on projects and repositories. The Regex has to be matched in order to make a commit (PR merge)</description>
 
     <organization>
         <name>MyHeritage</name>
@@ -44,6 +44,14 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <name>Severin Gafner</name>
+            <organization>Bucher + Suter Ag</organization>
+            <organizationUrl>https://bucher-suter.com</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
 
     <contributors>
@@ -55,7 +63,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <amps.version>8.0.2</amps.version>
-        <bitbucket.version>5.16.0</bitbucket.version>
+        <bitbucket.version>7.16.0</bitbucket.version>
         <bitbucket.data.version>${bitbucket.version}</bitbucket.data.version>
 
         <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->

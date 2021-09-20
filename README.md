@@ -1,11 +1,11 @@
 # Bitbucket Merge Checker
 
-You always wanted a way to validate the commit message you enter when you merge a branch on Bitbucket, right? well, now you can!   
+You always wanted a way to validate the commit message you enter when you merge a branch on Bitbucket, right? well, now you can!
 This is a simple (yet uncommon) merge checker for Bitbucket which can be customized and toggled on and off at both the Project and the Repo level.
 
 ## Getting started
 ### Installing
-In order to enjoy the plugin you first need to install it on you Bitbucket server, and you have 2 options for that:  
+In order to enjoy the plugin you first need to install it on you Bitbucket server, and you have 2 options for that:
 > You need to have administrator permissions to be able to install plugins on your Bitbucket server
 #### Option 1 :: The Marketplace
 1. On Bitbucket, go to the [Marketplace](https://marketplace.atlassian.com/addons/app/bitbucket) and search for "Bitbucket merge checker"
@@ -31,7 +31,7 @@ By default the plugin is disabled for all projects and repos. To activate it for
 ![The plugin installed on the manage apps page](assets/plugin-on-avilalbe-marge-checks.png)
 3. Toggle the "Merge checker hook" on. You will be prompted with the plugin configuration dialog (see image below). Currently the plugin only supports validation over commit messages.
 ![The plugin installed on the manage apps page](assets/plugin-configuration-dialog.png)
-4. Fill the fields (all are required) 
+4. Fill the fields (all are required)
    * Merge commit message Regex - The Regex against the commit message will be validated
    * A summary notification - The summary message displayed when the commit was rejected
    * A detailed notification - The detailed message displayed when the commit was rejected. Here you might wanna elaborate on the standards the commit message should adhere to.
@@ -40,22 +40,22 @@ By default the plugin is disabled for all projects and repos. To activate it for
 Try your new merge check!
 
 ## Contributing
-We are looking forward to making this plugin even better and will appreciate any contribution in efforts to make it so.  
+We are looking forward to making this plugin even better and will appreciate any contribution in efforts to make it so.
 ### Launching Bitbucket with the plugin
 1. Fork the repository to you local machine
 2. Download the Atlassian SDK (see more details [here](https://developer.atlassian.com/server/framework/atlassian-sdk/set-up-the-atlassian-plugin-sdk-and-build-a-project/))
-3. Navigate to the repository directory on your local machine and run `atlas-run`. This will trigger the mvn goal which builds and launches a local Bitbucket server.  
+3. Navigate to the repository directory on your local machine and run `atlas-run`. This will trigger the mvn goal which builds and launches a local Bitbucket server.
 
-Now You should be able to navigate to Bitbucket on your local machine and see the plugin installed on it. 
-### Modifying and checking 
+Now You should be able to navigate to Bitbucket on your local machine and see the plugin installed on it.
+### Modifying and checking
 The plugin support a sort of live-reloading OOTB, which means that after each modification you made you can run `atlas-package` on the repository root directory and refresh the Bitbucket page to see your changes.
 
 ### Running tests
-In order to run the tests you should run the following command from the project's root directory: `atlas-unit-test`.  
+In order to run the tests you should run the following command from the project's root directory: `atlas-unit-test`.
 This will run the unit tests.
 
 ### Bitbucket Server version compatibility
-This plugin was tested for Bitbucket-Server@5.16.0, but it might still work on lower versions than that.
+This plugin was tested for Bitbucket-Server@7.16.0, but it might still work on lower versions than that.
 
 ### i18n support
 Currently only the English language is supported.
